@@ -1,0 +1,18 @@
+# Ignore virtual environment
+summarization-env/
+venv/
+t5_model/
+t5_tokenizer/
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+
+# Ignore system files (MacOS, Windows)
+.DS_Store
+Thumbs.db
