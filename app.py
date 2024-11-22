@@ -5,8 +5,8 @@ import torch
 # Check if GPU is available, else use CPU
 device = 0 if torch.cuda.is_available() else -1
 
-# Load summarization model (DistilBART) and specify the device
-summarizer = pipeline("summarization", model="facebook/distilbart-cnn-12-6", device=device)
+# Load summarization model (BART) and specify the device
+summarizer = pipeline("summarization", model="facebook/bart-large-cnn", device=device)
 
 # Streamlit interface
 st.title("Text Summarization App")
